@@ -1,6 +1,10 @@
 import React from 'react';
 
-const Status = ({children}:{children:string}) => {
+type childrenDataTypes = {
+    children:string
+}
+
+const Status = ({children}:childrenDataTypes) => {
     return (
         <div>
             {children}
