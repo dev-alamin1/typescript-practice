@@ -1,11 +1,10 @@
 import './App.css'
-import Conditional from './components/Conditional';
+import Status from './components/ChildrenDataPass/Status';
 function App() {
-
 
   return (
     <div className="App">
-      <Conditional status="loaded" />
+      <Status>Awsome</Status>
     </div>
   );
 }
