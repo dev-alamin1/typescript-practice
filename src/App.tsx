@@ -1,15 +1,15 @@
 import './App.css'
-import HtmlCompnetPassToChildren from './components/ChildrenDataPass/HtmlCompnetPassToChildren';
+import User from './components/User';
 function App() {
+
+  const user = {
+    name:"Al-amin Mondal",
+    age:20
+  }
 
   return (
     <div className="App">
-      <HtmlCompnetPassToChildren>
-        <div>
-            <h2>How to pass Html compoent to a component ?</h2>
-            <p>It's so easy !</p>
-        </div>
-      </HtmlCompnetPassToChildren>
+      <User user={user}/>
     </div>
   );
 }

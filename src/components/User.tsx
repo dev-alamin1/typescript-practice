@@ -5,8 +5,8 @@ type userDemoInfo = {
     user :{
     name:string
     age:number
-    phone:number
-    isActive:boolean
+    phone?:number
+    isActive?:boolean
     }
 }
 
