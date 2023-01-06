@@ -7,14 +7,15 @@ const LoggedIn = () => {
     type UserProps ={
         name:string
         email:string
+        phone?:number
     }
 
-    const [user,setUser] = useState<null | UserProps >(null);
+    const [user,setUser] = useState<null | UserProps >({} as UserProps);
 
     const handleLogin = ()=>{
         setUser({
             name:'Al-amin Mondal',
-            email: 'dev.alaminmondal@gmail.com'
+            email: 'dev.alaminmondal@gmail.com',
         })
     }
 
