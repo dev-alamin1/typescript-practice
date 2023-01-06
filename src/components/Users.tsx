@@ -6,16 +6,7 @@
 */
 
 import React from 'react';
-
-type UserType = {
-   
-    users:{
-        name:string
-        age:number 
-        bangladeshi: boolean
-    }[]
-
-}
+import { UserType } from './Types/Types';
 
 const Users = ({users}: UserType) => {
     return (

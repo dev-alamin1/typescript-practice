@@ -1,14 +1,5 @@
 import React from 'react';
-
-// user info type
-type userDemoInfo = {
-    user :{
-    name:string
-    age:number
-    phone?:number
-    isActive?:boolean
-    }
-}
+import { userDemoInfo } from './Types/Types';
 
 const User = ({user}:userDemoInfo) => {
     return (

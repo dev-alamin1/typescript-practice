@@ -1,9 +1,5 @@
 import React from 'react';
-
-type cardProps = {
-    children:string | React.ReactNode
-    style: React.CSSProperties
-}
+import { cardProps } from '../Types/Types';
 
 const Card = ({children,style}:cardProps) => {
     return (
