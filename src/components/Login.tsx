@@ -12,7 +12,8 @@ const Login = () => {
    console.log(userInfo)
     return (
         <div>
-            
+             <p>Name: {userInfo.name}</p>
+             <p>Email: {userInfo.email}</p>
         </div>
     );
 };
