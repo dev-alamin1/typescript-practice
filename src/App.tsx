@@ -1,9 +1,12 @@
 import './App.css'
-import LoggedIn from './components/State/LoggedIn';
+import AuthContextProvider from './components/Context/AuthContextProvider';
+import Login from './components/Login';
 function App() {
   return (
     <div className="App">
-      <LoggedIn/>
+       <AuthContextProvider>
+         <Login/>
+       </AuthContextProvider>
     </div>
   );
 }

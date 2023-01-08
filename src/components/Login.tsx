@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from './Context/AuthContextProvider';
 
 type LoginInfoType ={
     name:string
-    isLogin:boolean
+    email:string
+    isLogin?:boolean
 }
 
-const Login = ({name,isLogin}:LoginInfoType) => {
+const Login = () => {
+    const userInfo = useContext(AuthContext);
+   console.log(userInfo)
     return (
         <div>
-            {isLogin ? <h2>Welcome {name} </h2> : <h2>Welcome Guest User</h2>}
+            
         </div>
     );
 };
