@@ -4,17 +4,34 @@
 
 import React from 'react';
 
-type restictProps = {
+type restrictValueType = {
     value:number
-    isZero?: boolean
-    isNegative?:boolean
-    isPositive?:boolean
 }
+
+type zero = restrictValueType & {
+    isZero?: boolean
+    isNegative?:never
+    isPositive?:never
+}
+
+type negative = restrictValueType & {
+    isZero?: never
+    isNegative?:boolean
+    isPositive?:never
+}
+
+type positive = restrictValueType & {
+    isPositive?: boolean
+    isNegative?:never
+    isZero?:never
+}
+
+type restictProps = zero | negative | positive
 
 const Restrict = ({value,isZero, isNegative, isPositive}:restictProps) => {
     return (
         <div>
-             {value} {isZero && 'Zero'} {isNegative && 'Negative'} {isPositive && 'Positive'}
+            {value} {isZero && "Zero"} {isNegative && "Negative"} {isPositive && "Positive"}
         </div>
     );
 };
