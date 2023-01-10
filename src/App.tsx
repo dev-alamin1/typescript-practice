@@ -1,12 +1,12 @@
 import './App.css'
-import AuthContextProvider from './components/Context/AuthContextProvider';
-import Login from './components/Login';
+import Box from './components/ThemeContext/Box';
+import ThemeContextProvider from './components/ThemeContext/ThemeContextProvider';
 function App() {
   return (
     <div className="App">
-       <AuthContextProvider>
-         <Login/>
-       </AuthContextProvider>
+       <ThemeContextProvider>
+          <Box/>
+       </ThemeContextProvider>
     </div>
   );
 }
