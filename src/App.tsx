@@ -1,12 +1,9 @@
 import './App.css'
-import Restrict from './components/RestrictProps/Restrict';
+import Toast from './components/TemplateLiteral/Toast';
 function App() {
   return (
     <div className="App">
-         {/* <Restrict value={5} isNegative isPositive/> */}
-         {/* akoi sathe akadhik props evabe pathano jabe na */}
-
-         <Restrict value={5} isPositive/>
+        <Toast position='center-bottom'/>
     </div>
   );
 }
