@@ -1,10 +1,12 @@
 import './App.css'
-import Private from './components/PassComponent/Private';
-import LoggegInUser from './components/PassComponent/LoggegInUser';
+import List from './components/Generic/List';
+
 function App() {
   return (
     <div className="App">
-        <Private isLoggedIn={true} component={LoggegInUser}/>
+        <List students={['Monira','Ritu','Farjana','Shimu']} style={{backgroundColor:"bisque",marginBottom:"5px", color:"green", fontWeight:"bold", fontSize:"20px", width:"300px", padding:"5px"}} onClick={(data)=>console.log(data)}/>
+
+        <List students={[1,2,3,4,5,6]} style={{backgroundColor:"black",marginBottom:"5px", color:"white", fontWeight:"bold", fontSize:"20px", width:"300px", padding:"5px"}} onClick={(data)=>console.log(data)}/>
     </div>
   );
 }
