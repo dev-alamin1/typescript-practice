@@ -6,7 +6,12 @@ type verticalProps  = 'top' | 'center' | 'bottom'
 
 
 type toastProps = {
-    position: `${horizontalProps}-${verticalProps}`
+    // position: `${horizontalProps}-${verticalProps}`
+    // this will also make postion = center-center 
+    // we have to solve this problem.. so we can exclude
+
+    position: Exclude<`${horizontalProps} - ${verticalProps}`,'center-center'> | 'center'
+    
 }
 
 const Toast = ({position}:toastProps) => {

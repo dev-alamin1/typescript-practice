@@ -3,7 +3,7 @@ import Toast from './components/TemplateLiteral/Toast';
 function App() {
   return (
     <div className="App">
-        <Toast position='center-bottom'/>
+        <Toast position='center'/>
     </div>
   );
 }
